@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        body{
+            margin:0;
+            background:black;
+        }
+        *{
+            box-sizing:border-box;
+            font-family: 'Nunito Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+        }
+        .main-container{
+            width:100%;
+            height:100vh;
+            background:black;
+            
+        }
+        .header{
+            width:100%;
+            height:50px;
+            
+        }
+        .header a{
+            text-decoration:none;
+            color: white;
+        }
+        li{
+            display: inline-block;
+            float:right;
+            margin-left:10px;
+            margin-right:4px;
+        }
+        section{
+           width:100%;
+           padding:0px;
+           position: relative;
+           overflow:hidden;
+        }
+        .sec1{
+            height:100vh;
+            background:url(https://i.ibb.co/wSQBcbZ/circle-victoria-s-secret-color-clip-art-fashion-circles-346317086aca5da2002d174e3f54b42c.png);
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position-y:500px;
+        }
+        .overview {
+        width:50%;
+        min-height:100px;
+        max-height:auto;
+        z-index:2;
+        
+        position: absolute;
+        padding:15px;
+        }
+        .hello{
+            font-size:20px;
+            color:#9a15ff;
+            font-weight:bold;
+            font-family: 'Tangerine', cursive;
+        }
+        .rahul{
+            font-size:40px;
+            font-weight:bold;
+            color:white;
+            margin-top:5px;
+            font-family: 'East Sea Dokdo', cursive;
+        }
+        span{
+            color:white;
+            font-size:14px;
+        }
+        .info{
+            color:#eee;
+            margin-top:15px;
+            font-size:11px;
+        }
+        .crea{
+            font-weight:bold;
+            color:orange;
+            overflow:hidden;
+            width:0px;
+            
+            display:inline-block;
+            animation:crea 1.5s linear infinite;
+            white-space:nowrap
+        }
+        @keyframes crea{
+            from{
+                width:0;
+                opacity:0;
+                background:rgba(255,255,255,.9)
+            }
+            to{
+               width:120px;
+                
+                opacity:1;
+                background:rgba(255,255,255,.0);
+            }
+        }
+        .mydp{
+            transform: scale(.9);
+            opacity:.43;
+            position: absolute;
+            left:-30px;
+        }
+        i{
+            color:white;
+            font-size:30px;
+            opacity:1;
+        }
+        .sec2{
+            width:100%;
+            background-color:#eee;
+           background-image:url(https://i.ibb.co/vXzMgNp/kisspng-download-icon-colorful-abstract-background-vector-material-5a9371ab431511-444606161519612331.png);
+           background-size:300px;
+            background-repeat:no-repeat;
+            background-position-x:-40px;
+            background-position-y:200px;
+        }
+        .target{
+            width:80%;
+            padding:10px;
+            display:inline-block;
+            color:#272727;
+            
+        }
+        button{
+            border-radius:59px 80px 95px 53px / 96px 48px 88px 53px;
+            width:100px;
+            height:100px;
+            background:#9a15ff;
+            border-style:hidden;
+        }
+        .fixel{
+            font-size:23px;
+            font-weight:bold;
+            color:#272727;
+            margin-top:5px;
+            font-family: 'Major Mono Display', monospace;
+        }
+        .dec{
+            color:gray;
+            font-size:14px;
+        }
+        .sec3{
+            width:100%;
+            background:#becad3;
+            height:300px;
+        }
+        .project{
+            
+            color:white;
+            font-weight:bold;
+            font-size:14px;
+        }
+        .amazing-work{
+           font-weight:bold;
+            font-size:33px;
+            color:#575757;
+            font-family: 'East Sea Dokdo', cursive;
+        }
+        .hire-btn{
+            color:white;
+            position: absolute;
+            bottom:400px;
+            left:16px;
+            font-size:12px;
+            padding:10px;
+            border-radius:5px;
+            line-height:15px;
+            width:110px;
+            height:35px;
+            text-align:center;
+            color: white;
+            z-index:9;
+            background:#9a15ffde;
+        }
+        .fa-download{
+            font-size:14px;
+        }
+        .fa-bars{
+            float:right;
+            color:white;
+            font-size:16px;
+            padding:10px;
+        }
+        .skill{
+            background:white;
+            
+        }
+        .skills-box{
+            width:110px;
+            height:85px;
+            
+            position:relative;
+            display: inline-block;
+            margin:8px;
+            border-radius:5px;
+            border:1.5px solid rgba(0,0,0,.1);
+            padding-top:8px;
+        }
+        .a{
+            color:#373737;
+        }
+      .skill-txt-name{
+          font-family: 'Major Mono Display', monospace;
+          color:#383838;
+          font-size:16px;
+      }  
+       .fa-brain{
+       margin-top:30px;
+           color:#575757;
+       }
+       .logo{
+           float:left;
+           padding:10px;
+           color:white;
+           text-indent:10px;
+           font-family: 'Big Shoulders Inline Display', cursive;
+           font-size:25px;
+       }
+       small {
+       color:gray;
+       }
+    </style>
+    <meta charset="UTF-8">
+    <title>Dev Portfolio</title>
+</head>
+<body>
+  
+      
+    <div class="main-container">
+     <header class="header">
+         <div class="logo">D[-V</div>
+        <!--a href="#"><li>Resumé</li></a>
+        <a href="#"><li>Skills</li></a>
+        <a href="#"><li>Projects</li></a>
+        <a href="#"><li>Home</li></a-->
+        <i class="fal fa-bars"></i>
+     </header>   
+        <section class="sec1">
+            <div class="hire-btn"><i class="far fa-download"></i> Resume</div>
+         <div class="overview">
+             <div class="hello">Hello, I'm</div>
+             <div class="rahul">Rahul Dev</div>
+             <span class="design"><sup>I'm a </sup></span> <span class="crea"></span>  
+             <div class="info">I'm a Web designer from India, and I'm very passionate and dedicated to my work.</div>
+         </div>
+         <img src="https://i.ibb.co/VJK3Cpy/Lumii-20230911-120443710.jpg"class="mydp">
+         <!--center><i class="fal fa-arrow-alt-circle-down"></i></center-->
+        </section>
+      <section class="sec2">
+          <center>
+           <div class="target">
+               <button>
+                   <i class="far fa-bullseye-arrow"></i>
+               </button>
+               <div class="fixel">Pixel Perfect</div>
+              <div class="dec"><sup><i class="fas fa-quote-left"></i></sup> It's like being an artist and creating a digital masterpiece that looks amazing. It's important for web developers to aim for pixel perfect because it shows that they care about making things look really good on the screen.</div>
+           </div>
+           
+           
+           <div class="target">
+               <button style="background:orange;">
+                <i class="far fa-brush"></i>
+               </button>
+               <div class="fixel">High Quality</div>
+              <div class="dec"><sup><i class="fas fa-quote-left"></i></sup> Great web development is a blend of technical expertise and creative vision, resulting in a seamless digital experience that leaves a lasting impression.</div>
+           </div>
+           
+           
+          <div class="target">
+               <button style="background:lime;">
+               <i class="far fa-lightbulb-on"></i>
+               </button>
+               <div class="fixel">Awesome Idea</div>
+              <div class="dec"><sup><i class="fas fa-quote-left"></i></sup> Web development is the art of blending design and functionality, creating visually stunning and user-friendly digital experiences.</div>
+           </div> 
+           
+           
+           
+          </center>
+      </section>
+      
+      <section class="sec3">
+          <center>
+              <br><br>
+              <i class="far fa-gem"></i>
+             <div class="project">Projects</div>
+             <div class="amazing-work">My Amazing Works</div>
+              
+          </center>
+      </section>
+      
+      <section class="skill">
+          <center>
+         
+               <i class="far fa-brain"></i>
+              
+               <div class="fixel">Skills</div>
+               <div class="skills-box"style="backgrund: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);"><i class="fab fa-html5 a"></i><div class="skill-txt-name">HTML5</div></div>
+               <div class="skills-box"><i class="fab fa-css3-alt a"></i><div class="skill-txt-name">CSS3</div></div>
+               <div class="skills-box"><i class="fab fa-js-square a"></i><div class="skill-txt-name">JS</div></div>
+               <div class="skills-box"><i class="fab fa-bootstrap a"></i><div class="skill-txt-name">Bootstrap</div></div>
+               <div class="skills-box"><i class="fab fa-react a"></i><div class="skill-txt-name">React Js</div></div>
+               <div class="skills-box"><i class="fab fa-php a"></i><div class="skill-txt-name">PHP</div></div>
+            <div class="skills-box"><i class="fab fa-figma a"></i><div class="skill-txt-name">Figma</div></div>  
+            <div class="skills-box"><i class="fab fa-python a"></i><div class="skill-txt-name">Python</div></div> 
+               <br>
+               <small> <i class="far fa-user"></i> rahul343.rk70@gmail.com</small>
+               </center>
+      </section>
+    </div>
+      <script>
+          var a = ["Web Designer","Creative Designer","App Developer","Graphics Designer","Video Editor"];
+          var c = -1;
+          setInterval(function (){
+          if(c==4){
+              c=-1;
+          }
+          else{
+              c++;
+              document.getElementsByClassName("crea")[0].innerHTML=a[c];
+              }
+          },1500)
+          
+          </script>
+      
+</body>
+</html>
